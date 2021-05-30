@@ -1,0 +1,74 @@
+<head>
+ <title>Ece MarketPlace</title>
+ <link href="home.css" rel="stylesheet" type="text/css" />
+ <link href="favicon.ico" rel="icon" type="images/x-icon" />
+ <meta charset="utf-8" />
+</head>
+
+
+<body>
+	<div >
+		<a href = "home.html">
+      <img src="logo.png" alt=""/>
+    </a>
+    <!--Bande défilante-->
+    <marquee behavior="scroll" direction="left" width="100%" bgcolor="#EEEEEE">
+     <h2>SITE DE VENTE DE MEUBLES / OBJETS D'ART / ACCESSOIRES VIP / MATERIEL SCOLAIRE</h2>
+   </marquee><br></h1>
+ </div>
+</div >
+
+<!-- création des boutons-->
+<div>
+  <ul>
+   <a href="home.html" onclick="myFunction()" class="dropbtn" class = "button">Accueil</a>
+
+   <div class="dropdown">
+     <button onclick="myFunction()" class="dropbtn">Tout Parcourir</button>
+     <div id="myDropdown" class="dropdown-content">
+       <a href="meuble.html">Meubles et objets d'art</a>
+       <a href="accessoire.html">Accessoires VIP</a>
+       <a href="scolaire.html">Matériels scolaires</a>
+       <script type="text/javascript">
+        /* Code javascript pour afficher la liste déroulante */
+        function myFunction() {
+         document.getElementById("myDropdown").classList.toggle("show");
+       }
+
+					// on ferme la liste si l'utilisateur clique ailleurs
+					window.onclick = function(event) {
+           if (!event.target.matches('.dropbtn')) {
+             var dropdowns = document.getElementsByClassName("dropdown-content");
+             var i;
+             for (i = 0; i < dropdowns.length; i++) {
+               var openDropdown = dropdowns[i];
+               if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+    </div>
+  </div>
+
+  <a href="notification.html" onclick="myFunction()" class="dropbtn" class = "button">Notification</a>
+  <a href="panier.html" onclick="myFunction()" class="dropbtn" class = "button">Panier</a>
+  <a href="compte.html" onclick="myFunction()" class="dropbtn" class = "button">Votre compte</a>
+</ul>
+</div>
+
+
+
+<div class="grille" align="center">
+  <strong>
+   <a href = "sac.html">
+    <img src="sac.jfif" alt="" height="400" width="400"></a></strong>
+    <a href = "bague.html">
+      <em><img src="bague.jfif"alt="" height="400" width="400"></em></a>
+      <a href = "collier.html">
+        <em><img src="collier.jfif"alt="" height="400" width="400"></em></a>
+        <strong>
+          <a href = "parfum.html">
+            <img src="parfum.jfif" alt="" height="400" width="400"></a></strong>
+            <a href = "dior.html">
